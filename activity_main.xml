@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/realcustomerID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textCustomerAddress"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="Customer Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomerID" />
+
+    <TextView
+        android:id="@+id/textCustomerID"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="Customer ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomerName" />
+
+    <TextView
+        android:id="@+id/textCustomerName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:text="Customer Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="169dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="160dp"
+        android:background="@drawable/custombutton"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomerAddress" />
+
+    <EditText
+        android:id="@+id/customerAddress"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:background="@drawable/outlinebox"
+        android:inputType="textPostalAddress"
+        app:layout_constraintStart_toEndOf="@+id/textCustomerAddress"
+        app:layout_constraintTop_toBottomOf="@+id/customerID" />
+
+    <EditText
+        android:id="@+id/customerID"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:background="@drawable/outlinebox"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textCustomerID"
+        app:layout_constraintTop_toBottomOf="@+id/customerName" />
+
+    <EditText
+        android:id="@+id/customerName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/outlinebox"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textCustomerName"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
