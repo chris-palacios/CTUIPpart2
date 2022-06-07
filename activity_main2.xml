@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textOrdeFulfilledBy"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/greenbox"
+        android:gravity="center"
+
+        android:text="Order_FullfilledBy"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOrderQuantity" />
+
+    <TextView
+        android:id="@+id/textOrderName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/greenbox"
+        android:gravity="center"
+
+        android:text="Order_Name"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCustomerOrderID" />
+
+    <TextView
+        android:id="@+id/textOrderQuantity"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/greenbox"
+        android:gravity="center"
+
+        android:text="Order_Quantity"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOrderName" />
+
+    <TextView
+        android:id="@+id/textCustomerOrderID"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/greenbox"
+        android:gravity="center"
+
+        android:text="Customer Order ID"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/greenboxoutline"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/textCustomerOrderID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/greenboxoutline"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:gravity=""
+        android:text=""
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/textOrderName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/greenboxoutline"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/textOrdeFulfilledBy"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/greenboxoutline"
+        android:textColor="#000000"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textOrderQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
